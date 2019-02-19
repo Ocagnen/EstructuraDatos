@@ -18,6 +18,7 @@ public class Main {
         System.out.println(Actividad22.getVecesA());
         System.out.println(a.getTamA());
 
+        System.out.println("Lista A");
         a.incluirElementoListaA(55);
         a.incluirElementoListaA(67);
         a.incluirElementoListaA(51);
@@ -27,7 +28,7 @@ public class Main {
         a.mostrarListaA();
 
         
-        System.out.println("");
+        System.out.println("Lista B");
         System.out.println(a.getTamB());
         a.incluirElementoListaB(55);
         a.incluirElementoListaB(58);
@@ -39,11 +40,11 @@ public class Main {
         a.incluirElementoListaB(95);
         a.mostrarListaB();
         
-        System.out.println("");
+        System.out.println("Lista C");
         a.rellenarListaC();
         a.imprimirListaC();
         
-        System.out.println("");
+        System.out.println("Lista D");
         a.rellenarListaD();
         a.imprimirListaD();
     }

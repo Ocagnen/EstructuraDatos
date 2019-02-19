@@ -15,7 +15,7 @@ public class PruebaLibro {
         
         Actividad19 a = new Actividad19();
         
-        Libro l = new Libro("Hola","Javier",230);
+        /*Libro l = new Libro("Hola","Javier",230);
         Libro l1 = new Libro("Adios","Mano",500);
         Libro l2 = new Libro("Buenas","ana",290);
         
@@ -32,8 +32,11 @@ public class PruebaLibro {
         System.out.println(a.librosTotales());
         
             
+        */
+        Libro ejemplo = new Libro("Ejemplo","Javier",345,"1212");
+        a.agregarLibro(new Libro("Ejemplo","Javier",345,"1212"));
         
-        
+        System.out.println(a.buscarN(ejemplo));
         
     }
     

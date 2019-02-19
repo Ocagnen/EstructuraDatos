@@ -5,6 +5,8 @@
  */
 package ejercicio19;
 
+import java.util.Objects;
+
 /**
  *
  * @author javier
@@ -14,12 +16,65 @@ public class Libro {
     private String nombre;
     private String autor;
     private int numPag;
+    private String isbn;
 
-    public Libro(String nombre, String autor, int numPag) {
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 59 * hash + Objects.hashCode(this.nombre);
+        hash = 59 * hash + Objects.hashCode(this.autor);
+        hash = 59 * hash + this.numPag;
+        hash = 59 * hash + Objects.hashCode(this.isbn);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        //Se hace uso del polimorfismo. Conversión explícita de tipos
+        final Libro other = (Libro) obj;
+        if (this.numPag != other.numPag) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        if (!Objects.equals(this.autor, other.autor)) {
+            return false;
+        }
+        if (!Objects.equals(this.isbn, other.isbn)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
+    
+
+    public Libro(String nombre, String autor, int numPag, String isbn) {
         this.nombre = nombre;
         this.autor = autor;
         this.numPag = numPag;
+        this.isbn=isbn;
     }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+    
+    
 
     @Override
     public String toString() {

@@ -16,6 +16,10 @@ public class Actividad19 {
     private ArrayList<Libro> lista;
     
     
+    public int buscarN(Libro nuevo){
+       return lista.indexOf(nuevo);
+    }
+    
 
     public int librosTotales() {
         return lista.size();
