@@ -6,7 +6,7 @@
 package ejercicio22;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+
 import java.util.Random;
 
 /**
@@ -100,13 +100,13 @@ public class Actividad22 {
     public void rellenarListaD(){
         
         ArrayList<Integer> i = new ArrayList<>();
-        int vecesA=0;
-        int vecesB = 0;
+        int veces1=0;
+        
         for (int j = 0; j < this.listaA.size(); j++) {
             
             if(this.listaA.get(j)%2 ==0){
                 i.add(j);
-                vecesA++;
+                veces1++;
             }
         }
         
@@ -114,14 +114,14 @@ public class Actividad22 {
             
             if(this.listaB.get(j)%2!=0){
                 i.add(j);
-                vecesB++;
+                
             }  
             
         }        
         
         for (int j = 0; j < i.size(); j++) {
             
-            if(j<=vecesA){
+            if(j<=veces1){
                 
                 this.listaD.add(this.listaA.get(i.get(j)));
             } else {                
