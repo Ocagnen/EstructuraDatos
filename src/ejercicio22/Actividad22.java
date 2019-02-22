@@ -72,6 +72,8 @@ public class Actividad22 {
     
     public  void rellenarListaC(){
         
+        // Lista con busqueda binaria
+        
         ArrayList<Integer> i = new ArrayList<>();
         
         for (int j = 0; j < listaA.size(); j++) {
@@ -133,9 +135,12 @@ public class Actividad22 {
     }
     
     public  void imprimirListaD(){
-        for (Double double1 : this.listaD) {
+        
+        listaD.forEach(System.out::println);
+        
+       /* for (Double double1 : this.listaD) {
             System.out.println(double1);
-        }
+        }*/
     }
     
     
