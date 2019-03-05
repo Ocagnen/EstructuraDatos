@@ -18,6 +18,7 @@ public class Main {
         System.out.println("El minimo es "+Actividad13.calcularMin());
         System.out.println("El max es "+Actividad13.calcularMax());
         
+        
     }
     
 }

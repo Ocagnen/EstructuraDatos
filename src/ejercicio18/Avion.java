@@ -10,7 +10,7 @@ package ejercicio18;
  * @author javier
  */
 public class Avion {
-    
+
     private boolean[][] asientos;
 
     public Avion() {
@@ -25,26 +25,41 @@ public class Avion {
         this.asientos = asientos;
     }
 
-    public void mostrarAvion(){
-        
+    public boolean comprobarAsiento(int[] reserva) {
+        if (!asientos[reserva[0]][reserva[1]]) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int reservarAsiento(int[] reserva) {
+        if (comprobarAsiento(reserva)) {
+            asientos[reserva[0]][reserva[1]] = true;
+            return 1;
+        } else {
+            return -1;
+        }
+
+    }
+
+    public void mostrarAvion() {
+
         for (int i = 0; i < asientos.length; i++) {
-            System.out.println("Fila "+(i+1));
+            System.out.println("Fila " + (i + 1));
             for (int j = 0; j < asientos[i].length; j++) {
-                System.out.print(" Asiento "+(j+1));
-                if(asientos[i][j]){
+                System.out.print(" Asiento " + (j + 1));
+                if (asientos[i][j]) {
                     System.out.print(" ocupado |");
                 } else {
                     System.out.print(" libre |");
                 }
-                
-                
+
             }
             System.out.println("");
-            
+
         }
-        
+
     }
-    
-    
-    
+
 }
