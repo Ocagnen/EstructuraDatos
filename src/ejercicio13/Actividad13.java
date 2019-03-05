@@ -52,8 +52,7 @@ public class Actividad13 {
     }
 
     public static double calcularMin() {
-        
-        
+       
         double[] arrayP = new double[matriz.length];
 
         for (int i = 0; i < matriz.length; i++) {            
@@ -65,6 +64,7 @@ public class Actividad13 {
         return arrayP[0];  
         
 
+        
     }
     
     public static double calcularMax() {
