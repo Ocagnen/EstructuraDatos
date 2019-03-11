@@ -44,6 +44,16 @@ public class Actividad11 {
             
         }
         System.out.println("");
+        
+        /*for(char[] y:matriz){
+            for(char letra: x){
+            
+            letra;
+        }
+        */
+        
+        
+        
     }
 
     

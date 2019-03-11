@@ -61,7 +61,14 @@ public class Actividad13 {
             }
         Arrays.sort(arrayP);
         
-        return arrayP[0];  
+        return arrayP[0];
+        
+        
+        /* for (int x= 0; x<matriz.length; x++){
+                for/int y=0; y<matriz[x].length; y++){
+                    
+                    if(matriz[x][y] 
+        */        
         
 
         
